@@ -1,12 +1,9 @@
-# Build the package after a git clone
-
-Just run `debuild -us -uc`.
-
-
 # mcollective-flaf-plugins
 
 This is my Debian package for some mcollective plugins
 (agent and client) for Ubuntu Trusty and Debian Jessie.
+To build the packages after a `git clone`, just run
+the command `debuild -us -uc`.
 
 With the mcollective puppet plugin, to work correctly, you
 must put in the file `/etc/puppetlabs/mcollective/server.cfg` :
