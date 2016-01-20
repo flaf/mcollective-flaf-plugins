@@ -1,8 +1,15 @@
-# mcollective-flaf-puppet
+# Build the package after a git clone
 
-This is my Debian package for the mcollective plugin (agent
-and client) for Ubuntu Trusty and Debian Jessie. To work
-correctly, you must put in the file `/etc/puppetlabs/mcollective/server.cfg` :
+Just run `debuild -us -uc`.
+
+
+# mcollective-flaf-plugins
+
+This is my Debian package for some mcollective plugins
+(agent and client) for Ubuntu Trusty and Debian Jessie.
+
+With the mcollective puppet plugin, to work correctly, you
+must put in the file `/etc/puppetlabs/mcollective/server.cfg` :
 
 ```ini
 # Documentation here: https://github.com/puppetlabs/mcollective-puppet-agent
