@@ -1,0 +1,5 @@
+mcollective-flaf-plugins (1.10.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Francois Lafont <francois.lafont@ac-versailles.fr>  Wed, 20 Jan 2016 05:01:44 +0100

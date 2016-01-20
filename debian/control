@@ -1,0 +1,38 @@
+Source: mcollective-flaf-plugins
+Section: utils
+Priority: extra
+Maintainer: Francois Lafont <francois.lafont@ac-versailles.fr>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/flaf/mcollective-flaf-plugins
+Vcs-Git: git@github.com:flaf/mcollective-flaf-plugins.git
+
+Package: mcollective-flaf-puppet-common
+Architecture: all
+Depends: ${misc:Depends}, puppet-agent
+Description: Manage the puppet agent with MCollective
+
+Package: mcollective-flaf-puppet-agent
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-puppet-common
+Description: Manage the puppet agent with MCollective
+
+Package: mcollective-flaf-puppet-client
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-puppet-common
+Description: Manage the puppet agent with MCollective
+
+Package: mcollective-flaf-shell-common
+Architecture: all
+Depends: ${misc:Depends}, puppet-agent
+Description: Run shell commands via MCollectivea
+
+Package: mcollective-flaf-shell-agent
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-shell-common
+Description: Run shell commands via MCollectivea
+
+Package: mcollective-flaf-shell-client
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-shell-common
+Description: Run shell commands via MCollectivea
