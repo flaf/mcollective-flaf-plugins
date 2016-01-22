@@ -7,6 +7,22 @@ Standards-Version: 3.9.3
 Homepage: https://github.com/flaf/mcollective-flaf-plugins
 Vcs-Git: git@github.com:flaf/mcollective-flaf-plugins.git
 
+
+
+# Meta package to install the dependencies.
+Package: mcollective-flaf-agents
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-puppet-agent, mcollective-flaf-shell-agent
+Description: flaf MCollective agents
+
+Package: mcollective-flaf-clients
+Architecture: all
+Depends: ${misc:Depends}, mcollective-flaf-puppet-client, mcollective-flaf-shell-client
+Description: flaf MCollective clients
+
+
+
+# MCollective puppet agent and client.
 Package: mcollective-flaf-puppet-common
 Architecture: all
 Depends: ${misc:Depends}, puppet-agent
@@ -22,6 +38,10 @@ Architecture: all
 Depends: ${misc:Depends}, mcollective-flaf-puppet-common
 Description: Manage the puppet agent with MCollective
 
+
+
+
+# MCollective shell agent and client.
 Package: mcollective-flaf-shell-common
 Architecture: all
 Depends: ${misc:Depends}, puppet-agent
